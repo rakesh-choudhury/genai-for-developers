@@ -1,0 +1,17 @@
+modules:
+  jira:issuePanel:
+    - key: rakeshgemini-hello-world-issue-panel
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: RakeshGemini
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  id: ari:cloud:ecosystem::app/1f1439ff-5e1f-4d6f-9d39-95caed526487
